@@ -17,6 +17,7 @@
 		B1FA8B772BF5A3970024FF55 /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B762BF5A3970024FF55 /* TeamListViewController.swift */; };
 		B1FA8B7C2BF5AFBF0024FF55 /* member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B7B2BF5AFBF0024FF55 /* member.swift */; };
 		B1FA8B7E2BF5B2FB0024FF55 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B7D2BF5B2FB0024FF55 /* TeamTableViewCell.swift */; };
+		B1FA8B8B2BF6FB7D0024FF55 /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA8B8A2BF6FB7D0024FF55 /* TeamDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B1FA8B762BF5A3970024FF55 /* TeamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
 		B1FA8B7B2BF5AFBF0024FF55 /* member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = member.swift; sourceTree = "<group>"; };
 		B1FA8B7D2BF5B2FB0024FF55 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		B1FA8B8A2BF6FB7D0024FF55 /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				B1FA8B762BF5A3970024FF55 /* TeamListViewController.swift */,
 				B1FA8B7D2BF5B2FB0024FF55 /* TeamTableViewCell.swift */,
+				B1FA8B8A2BF6FB7D0024FF55 /* TeamDetailViewController.swift */,
 			);
 			path = team;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			files = (
 				B1FA8B772BF5A3970024FF55 /* TeamListViewController.swift in Sources */,
 				B1B866462BF30FE9008D0ECD /* MapViewController.swift in Sources */,
+				B1FA8B8B2BF6FB7D0024FF55 /* TeamDetailViewController.swift in Sources */,
 				B121CEAE2BEF05FD00796B11 /* AppDelegate.swift in Sources */,
 				B1B866442BF30C61008D0ECD /* EnterCoordViewController.swift in Sources */,
 				B1FA8B7E2BF5B2FB0024FF55 /* TeamTableViewCell.swift in Sources */,

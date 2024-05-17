@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Team Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="abouteam2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TeamDetailViewController" customModule="aboutable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,11 @@ College Kuala Lumpur</string>
                     </view>
                     <navigationItem key="navigationItem" id="t2e-xh-OXS"/>
                     <connections>
-                        <outlet property="photoImageView" destination="ezm-4v-Lzg" id="SgQ-Z4-3Qc"/>
+                        <outlet property="educationLbl" destination="U88-FO-qGl" id="Ivs-e0-T6n"/>
+                        <outlet property="experienceLbl" destination="RZP-lI-rH7" id="eF2-ha-tqV"/>
+                        <outlet property="nameLbl" destination="9Po-9q-3cK" id="94d-SS-4dj"/>
+                        <outlet property="photoView" destination="ezm-4v-Lzg" id="83q-nd-lKi"/>
+                        <outlet property="positionLbl" destination="np0-yK-XHf" id="5fO-lw-qFR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -194,7 +198,7 @@ College Kuala Lumpur</string>
         <!--Company Directors-->
         <scene sceneID="hRo-7c-VIi">
             <objects>
-                <viewController id="bUL-FN-lf5" customClass="TeamListViewController" customModule="abouteam2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bUL-FN-lf5" customClass="TeamListViewController" customModule="aboutable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kbe-WX-LSM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,7 +207,7 @@ College Kuala Lumpur</string>
                                 <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="member" textLabel="TMt-Ka-xPp" detailTextLabel="qNo-AO-Nx7" imageView="Iww-x3-YmX" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="fv5-EL-Qbh" customClass="TeamTableViewCell" customModule="abouteam2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="member" textLabel="TMt-Ka-xPp" detailTextLabel="qNo-AO-Nx7" imageView="Iww-x3-YmX" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="fv5-EL-Qbh" customClass="TeamTableViewCell" customModule="aboutable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fv5-EL-Qbh" id="WPZ-Q5-SqO">
@@ -234,7 +238,7 @@ College Kuala Lumpur</string>
                                             <outlet property="nameLbl" destination="TMt-Ka-xPp" id="zZB-jN-iJI"/>
                                             <outlet property="photoView" destination="Iww-x3-YmX" id="l3p-CT-New"/>
                                             <outlet property="positionLbl" destination="qNo-AO-Nx7" id="oGp-9Y-LaL"/>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" id="30a-Zs-3lF"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" identifier="toDetail" id="Kfu-AJ-X81"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -284,7 +288,7 @@ College Kuala Lumpur</string>
         <!--Map View Controller-->
         <scene sceneID="G8e-gD-SCT">
             <objects>
-                <viewController id="hTG-KR-eIn" customClass="MapViewController" customModule="abouteam2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hTG-KR-eIn" customClass="MapViewController" customModule="aboutable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FR5-ND-ghv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -356,7 +360,7 @@ College Kuala Lumpur</string>
         <!--Enter Coord View Controller-->
         <scene sceneID="zYl-QT-GsZ">
             <objects>
-                <viewController modalPresentationStyle="formSheet" id="kKi-PL-9s9" customClass="EnterCoordViewController" customModule="abouteam2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="formSheet" id="kKi-PL-9s9" customClass="EnterCoordViewController" customModule="aboutable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="12l-LP-8id">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

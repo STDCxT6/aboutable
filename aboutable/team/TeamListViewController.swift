@@ -36,5 +36,34 @@ class TeamListViewController: UIViewController, UITableViewDelegate, UITableView
          teamCell.positionLbl.text = teamMember.position
          return teamCell
     }
+    
+    /// Method 2: Uncomment this only when using with method 2
+    // func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //     self.performSegue(withIdentifier: "toDetail", sender: self)
+    // }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "toDetail") {
+            
+            /// Method 1: Get selected cell using selected cell.
+            /// Note: This method only works if the cell is directly connected to next view.
+            /// It does not require the use of didSelectRowAt
+            guard let detailsVC = segue.destination as? TeamDetailViewController,
+                let selectedCell = sender as? TeamTableViewCell,
+                let indexPath = tableView.indexPath(for: selectedCell)
+            else { return }
+            let selectedRow = indexPath.row
+            
+            /// Method 2: Get selected row using indexPathForSelectingRow
+            /// Note: This method utilise the didSelectRowAt function
+            /// and make sure the identifier is properly named
+            // let detailsVC = segue.destination as! TeamDetailViewController
+            // let selectedRow = tableView.indexPathForSelectedRow!.row
+            
+            // Assign value to target VC variable
+            detailsVC.selectedTeaMember = tableData[selectedRow]
+        }
+    }
+
 
 }
