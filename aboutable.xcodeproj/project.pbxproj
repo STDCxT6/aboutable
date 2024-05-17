@@ -48,7 +48,7 @@
 		B121CEA12BEF05FD00796B11 = {
 			isa = PBXGroup;
 			children = (
-				B121CEAC2BEF05FD00796B11 /* abouteamtable */,
+				B121CEAC2BEF05FD00796B11 /* aboutable */,
 				B121CEAB2BEF05FD00796B11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B121CEAC2BEF05FD00796B11 /* abouteamtable */ = {
+		B121CEAC2BEF05FD00796B11 /* aboutable */ = {
 			isa = PBXGroup;
 			children = (
 				B1FA8B7A2BF5AFAC0024FF55 /* data */,
@@ -74,7 +74,7 @@
 				B121CEB82BEF05FE00796B11 /* LaunchScreen.storyboard */,
 				B121CEBB2BEF05FE00796B11 /* Info.plist */,
 			);
-			path = abouteamtable;
+			path = aboutable;
 			sourceTree = "<group>";
 		};
 		B1B866472BF30FF8008D0ECD /* location */ = {
@@ -334,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6D2DJPGTY2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = abouteam/Info.plist;
+				INFOPLIST_FILE = aboutable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alan.abouteam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alan.aboutable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6D2DJPGTY2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = abouteam/Info.plist;
+				INFOPLIST_FILE = aboutable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,7 +373,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alan.abouteam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alan.aboutable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
